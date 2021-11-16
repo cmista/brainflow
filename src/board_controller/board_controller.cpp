@@ -14,6 +14,7 @@
 #include <utility>
 
 #include "ant_neuro.h"
+#include "bioamp.h"
 #include "board.h"
 #include "board_controller.h"
 #include "board_info_getter.h"
@@ -229,6 +230,9 @@ int prepare_session (int board_id, const char *json_brainflow_input_params)
             break;
         case BoardIds::BRAINALIVE_BOARD:
             board = std::shared_ptr<Board> (new BrainAlive (params));
+            break;
+		case BoardIds::BIOAMP_BOARD:
+            board = std::shared_ptr<Board> (new Bioamp (params));
             break;
         default:
             return (int)BrainFlowExitCodes::UNSUPPORTED_BOARD_ERROR;

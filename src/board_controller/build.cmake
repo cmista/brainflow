@@ -77,6 +77,7 @@ SET (BOARD_CONTROLLER_SRC
     ${CMAKE_HOME_DIRECTORY}/src/board_controller/ble_lib_board.cpp
     ${CMAKE_HOME_DIRECTORY}/src/board_controller/muse/muse.cpp
     ${CMAKE_HOME_DIRECTORY}/src/board_controller/brainalive/brainalive.cpp
+    ${CMAKE_HOME_DIRECTORY}/src/board_controller/bioamp/bioamp.cpp
 )
 
 include (${CMAKE_HOME_DIRECTORY}/src/board_controller/ant_neuro/build.cmake)
@@ -130,6 +131,8 @@ target_include_directories (
     ${CMAKE_HOME_DIRECTORY}/src/board_controller/enophone/inc
     ${CMAKE_HOME_DIRECTORY}/third_party/SimpleBLE/include
     ${CMAKE_HOME_DIRECTORY}/src/board_controller/brainalive/inc
+    ${CMAKE_HOME_DIRECTORY}/src/board_controller/bioamp/inc
+
 )
 
 target_compile_definitions(${BOARD_CONTROLLER_NAME} PRIVATE -DNOMINMAX)

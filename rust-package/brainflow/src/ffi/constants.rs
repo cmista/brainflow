@@ -81,6 +81,7 @@ pub enum BoardIds {
     Muse2Board = 38,
     MuseSBoard = 39,
     BrainaliveBoard = 40,
+	BioampBoard = 41,
 }
 #[repr(i32)]
 #[derive(FromPrimitive, ToPrimitive, Debug, Copy, Clone, Hash, PartialEq, Eq)]
