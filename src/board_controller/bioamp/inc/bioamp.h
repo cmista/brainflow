@@ -15,7 +15,6 @@ class Bioamp : public OpenBCISerialBoard
 protected:
     void read_thread ();
     int set_port_settings ();
-    int status_check (); 	
 public:
     Bioamp (struct BrainFlowInputParams params)
         : OpenBCISerialBoard (params, (int)BoardIds::BIOAMP_BOARD)
