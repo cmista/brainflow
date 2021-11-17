@@ -49,7 +49,7 @@ public enum BoardIds
     ANT_NEURO_EE_225_BOARD (36),
     ENOPHONE_BOARD (37),
     MUSE_2_BOARD (38),
-    MUSE_S_BOARD (39);
+    MUSE_S_BOARD (39),
     BRAINALIVE_BOARD (40),
     BIOAMP_BOARD (41);
 
